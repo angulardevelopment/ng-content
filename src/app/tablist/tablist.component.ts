@@ -1,8 +1,8 @@
 import {
-ContentChildren,
-QueryList,
-Component,
-AfterContentInit
+  ContentChildren,
+  QueryList,
+  Component,
+  AfterContentInit
 } from "@angular/core";
 import { TabComponent } from "../tab/tab.component";
 
@@ -11,10 +11,12 @@ import { TabComponent } from "../tab/tab.component";
   templateUrl: './tablist.component.html',
   styleUrls: ['./tablist.component.css']
 })
-export class TablistComponent{
+export class TablistComponent {
+  //  return directives
+  @ContentChildren(TabComponent) tabList: QueryList<TabComponent>;
 
-@ContentChildren(TabComponent) tabList: QueryList<TabComponent>;
-ngAfterContentInit() {
-this.tabList.toArray()[0].printTitle();
-}
+  ngAfterContentInit() {
+    // to run methods of tab component
+    // this.tabList.toArray()[0].printTitle();
+  }
 }
