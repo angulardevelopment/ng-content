@@ -1,6 +1,12 @@
 # About
 
 Add content dynamically using ng-content
+
+1 component e4
+  1 component e1
+  1 component e2
+1 component e3
+
 # DynamicContent
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.

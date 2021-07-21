@@ -1,13 +1,19 @@
+<p>e4</p>
+
 <p>With another component</p>
 <app-tablist>
-  <app-tab *ngFor="let tab of tabs" [tab]="tab"></app-tab>
+  <!-- <app-tab *ngFor="let tab of tabs" [tab]="tab"></app-tab> -->
   </app-tablist>
 
+  <div *ngIf= "flag == false">
+    <app-tab *ngFor="let tab of tabs" [tab]="tab"></app-tab>
+
+  </div>
 
 <p>With class</p>
 
-  <app-tablist>
+  <!-- <app-tablist>
     <div class="header">
        Angular ng-content Select by Class Example
     </div>
-    </app-tablist>
+    </app-tablist> -->

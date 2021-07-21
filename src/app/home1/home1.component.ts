@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home1.component.scss']
 })
 export class Home1Component implements OnInit {
+flag = true;
+  constructor() {
 
-  constructor() { }
+   }
 
   tabs = [];
 ngOnInit() {
