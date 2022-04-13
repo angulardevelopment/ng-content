@@ -1,17 +1,16 @@
-import { Component, OnInit , Input} from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tab',
   templateUrl: './tab.component.html',
-  styleUrls: ['./tab.component.css']
+  styleUrls: ['./tab.component.css'],
 })
 export class TabComponent {
-
-  constructor() { }
+  constructor() {}
 
   @Input() tab;
-printTitle() {
-console.log(this.tab.title);
-}
 
+  printTitle() {
+    console.log(this.tab.title);
+  }
 }
