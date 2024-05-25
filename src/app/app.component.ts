@@ -7,6 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dynamic-content';
+
+  chatItem = {
+    message: 'Initial name',
+    avatar:
+      'https://icon-library.com/images/avatar-icon-images/avatar-icon-images-4.jpg'
+  };
+
+  updateChatItem() {
+ window.open("https://www.w3schools.com");
+    const randomInt = Math.round(Math.random() * 10);
+    this.chatItem = {
+      message: 'Random ${randomInt}',
+      avatar: `https://icon-library.com/images/avatar-icon-images/avatar-icon-images-${randomInt}.jpg`
+    };
+  }
 }
 
 if (typeof Worker !== 'undefined') {
