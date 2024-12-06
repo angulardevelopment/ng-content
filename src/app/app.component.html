@@ -1,8 +1,7 @@
-<!-- <app-home1></app-home1> -->
-
 <context name="ChatContext">
   <provider [value]="chatItem" name="ChatContext">
     <app-chat-container></app-chat-container>
   </provider>
 </context>
 <button (click)="updateChatItem()">Change Chat Item</button>
+<router-outlet></router-outlet>
