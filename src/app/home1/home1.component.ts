@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { TablistComponent } from '../tablist/tablist.component';
 
 @Component({
   selector: 'app-home1',
   templateUrl: './home1.component.html',
   styleUrls: ['./home1.component.scss'],
+  imports: [TablistComponent]
 })
 export class Home1Component implements OnInit {
   flag = true;

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { ChatMessageComponent } from './chat-message';
+import { ProviderComponent } from '../context';
+import { ColorAvatarComponent } from './chat-avatar';
 
 @Component({
   selector: 'app-chat-container',
@@ -14,6 +17,7 @@ import { Component } from '@angular/core';
         <app-chat-message></app-chat-message>
       </provider>
     </div>
-  `
+  `,
+  imports: [ChatMessageComponent, ProviderComponent, ColorAvatarComponent]
 })
 export class ChatContainerComponent {}

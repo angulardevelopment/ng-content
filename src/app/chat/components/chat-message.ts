@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ConsumerComponent } from '../context';
 
 @Component({
   selector: 'app-chat-message',
@@ -8,6 +9,7 @@ import { Component } from '@angular/core';
         <h4>{{ value.message }}</h4>
       </ng-template>
     </consumer>
-  `
+  `,
+  imports: [ConsumerComponent]
 })
 export class ChatMessageComponent {}

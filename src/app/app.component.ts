@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { ChatContainerComponent } from './chat/components/chat-container';
+import { ContextComponent, ProviderComponent } from './chat/context';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  imports: [RouterOutlet, ChatContainerComponent, ProviderComponent, ContextComponent]
 })
 export class AppComponent {
   title = 'dynamic-content';
